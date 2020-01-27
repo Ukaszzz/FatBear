@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.contener {
+  position: relative;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+.nav {
+  background-color: transparent;
+  position: fixed;
+  z-index: 1;
+  width: 1200px;
+  color: white;
+}
+
+.nav ul {
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  line-height: 40px;
+  list-style: none;
+  color: white;
+}
+
+.nav ul li {
+  width: 100%;
+}
+
+.nav ul:first-child {
+  margin-left: 30px;
+}
+
+.nav ul li a {
+  padding: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.nav ul li :hover {
+  background-color: rgba(41, 38, 38);
+  color: rgb(196, 196, 196);
+  transition: 0.2s linear;
+}
+
+.heads .video {
+  left: 0;
+  /* right: 0; */
+  max-width: 1200px;
+  max-height: 1200px;
+  z-index: -1;
+}
+.heads h1 {
+  font-family: "Ranga", cursive;
+
+  position: absolute;
+  top: 180px;
+  left: 150px;
+  font-family: Arial;
+  color: white;
+  font-size: 70px;
+}
+
+.heads h2 {
+  font-family: "Ranga", cursive;
+
+  position: absolute;
+  top: 300px;
+  right: 150px;
+
+  color: white;
+  font-size: 70px;
+}
+
+.aboutME {
+  background-image: url(img/cook-366875_1280.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  background-color: grey;
+}
+
+.collection {
+  display: flex;
+  height: 65vh;
+}
+
+.collection img {
+  /* margin: 50px; */
+  width: 30%;
+  height: 60%;
+}
+
+.collection p {
+  padding: 55px;
+  font-size: 20px;
+  color: white;
+}
+.cos {
+  background-image: url("img/wood-2142241_1920.jpg");
+  /* background-position: center bottom; */
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+
+  background-color: #ddd;
+}
+
+.cos h1 {
+  font-size: 50px;
+
+  border-radius: 15px;
+  padding: 5px;
+  padding-left: 10%;
+}
+.cos img {
+  display: flex;
+  width: 45%;
+  padding: 15px;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+.opis {
+  display: flex;
+  flex-direction: row;
+}
+.cos .opis h1 {
+  font-size: 30px;
+  margin: 15px;
+  padding-left: 10%;
+}
+.opis div {
+  width: 50%;
+  font-size: 30px;
+  flex-direction: column;
+}
+
+.opis p {
+  padding: 25px;
+  font-size: 20px;
+}
+
+.cos h1 {
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+  margin: 20px 20% 20px 20%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-around;
+  background-image: url(img//pier-407252_1920.jpg);
+  background-attachment: fixed;
+  color: white;
+}
+.contact p {
+  font-size: 22px;
+  padding: 20px;
+}
+.contact i {
+  padding: 10px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  background-color: rgb(36, 31, 31);
+  font: white 18px;
+}
+
+.footer p {
+  color: gray;
+  padding: 15px 0 15px 15px;
+}

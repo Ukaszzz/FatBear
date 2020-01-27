@@ -1,0 +1,43 @@
+.contener {
+  &__nav {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    ul {
+      padding: 10px 0;
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.5);
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-evenly;
+
+      li {
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: silver;
+        background-color: black;
+        border-bottom: 2px solid rgb(204, 203, 203);
+        border-right: 2px solid rgb(204, 203, 203);
+        border-radius: 20px;
+        min-width: 20%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .contener {
+    &__nav {
+      ul {
+        li {
+          margin-top: 20px;
+          min-width: 10%;
+          padding: 10px 15px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,75 @@
+.aboutMe {
+  background-image: url("../img/chili-1569665_1280.jpg");
+  background-position: center;
+  display: flex;
+  background-color: rgb(20, 19, 19);
+
+  background-size: cover;
+
+  &__collection {
+    text-align: center;
+    img {
+      margin: 20px;
+      width: 60%;
+      border-bottom: 4px solid rgb(77, 71, 71);
+      border-right: 3px solid rgb(77, 71, 71);
+    }
+    p {
+      text-align: justify;
+      padding: 30px;
+      margin-bottom: 20px;
+      color: rgb(204, 191, 191);
+      font-family: "Neucha";
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .aboutMe {
+    min-height: 80vh;
+    &__collection {
+      img {
+        width: 50%;
+      }
+      p {
+        padding: 10%;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutMe {
+    min-height: 50vh;
+    &__collection {
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+
+      img {
+        height: 40%;
+        width: 30%;
+      }
+      p {
+        margin-top: 50px;
+        padding: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutMe {
+    &__collection {
+      img {
+        height: 30%;
+        width: 20%;
+      }
+      p {
+        padding: 5%;
+      }
+    }
+  }
+}

@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: black;
+}
+
+.contener__nav {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.contener__nav ul {
+  padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contener__nav ul li {
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: silver;
+  background-color: black;
+  border-bottom: 2px solid #cccbcb;
+  border-right: 2px solid #cccbcb;
+  border-radius: 20px;
+  min-width: 20%;
+  cursor: pointer;
+}
+
+@media (min-width: 600px) {
+  .contener__nav ul li {
+    margin-top: 20px;
+    min-width: 10%;
+    padding: 10px 15px;
+  }
+}
+
+.header {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  background-color: black;
+  background-image: url("../img/vegetables-3017412_1280.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  min-height: 100vh;
+}
+
+.header h1 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-size: 40px;
+  color: white;
+  font-family: "Dancing Script";
+}
+
+.header h2 {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  font-size: 25px;
+  color: white;
+  font-family: "Indie Flower";
+}
+
+@media (min-width: 600px) {
+  .header h1 {
+    left: 25%;
+    font-size: 50px;
+  }
+  .header h2 {
+    font-size: 35px;
+    left: 30%;
+  }
+}
+
+@media (min-width: 900px) {
+  .header h1 {
+    left: 25%;
+    font-size: 60px;
+  }
+  .header h2 {
+    font-size: 45px;
+    left: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    min-height: 100vh;
+  }
+  .header h1 {
+    font-size: 70px;
+  }
+  .header h2 {
+    font-size: 55px;
+  }
+}
+
+.aboutMe {
+  background-image: url("../img/chili-1569665_1280.jpg");
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #141313;
+  background-size: cover;
+}
+
+.aboutMe__collection {
+  text-align: center;
+}
+
+.aboutMe__collection img {
+  margin: 20px;
+  width: 60%;
+  border-bottom: 4px solid #4d4747;
+  border-right: 3px solid #4d4747;
+}
+
+.aboutMe__collection p {
+  text-align: justify;
+  padding: 30px;
+  margin-bottom: 20px;
+  color: #ccbfbf;
+  font-family: "Neucha";
+}
+
+@media (min-width: 600px) {
+  .aboutMe {
+    min-height: 80vh;
+  }
+  .aboutMe__collection img {
+    width: 50%;
+  }
+  .aboutMe__collection p {
+    padding: 10%;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 900px) {
+  .aboutMe {
+    min-height: 50vh;
+  }
+  .aboutMe__collection {
+    margin: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .aboutMe__collection img {
+    height: 40%;
+    width: 30%;
+  }
+  .aboutMe__collection p {
+    margin-top: 50px;
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aboutMe__collection img {
+    height: 30%;
+    width: 20%;
+  }
+  .aboutMe__collection p {
+    padding: 5%;
+  }
+}
+
+.food {
+  background-image: url("../img/wood-316612_1280.jpg");
+}
+
+.food__title {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px;
+  margin-top: 30px;
+  font-family: "Merienda One";
+}
+
+.food .one {
+  background-color: rgba(36, 32, 32, 0.678);
+  color: #bebebe;
+  text-align: center;
+  padding: 10px 5px;
+  margin: 23px;
+  border: 5px ridge #636463;
+  -webkit-box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.75);
+          box-shadow: 6px 6px 10px 3px rgba(0, 0, 0, 0.75);
+}
+
+.food .one__title {
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+  letter-spacing: 1px;
+  color: #c7b9b9;
+  font-family: "Merienda One";
+}
+
+.food .one__description {
+  padding: 10px;
+  text-align: justify;
+  font-family: "Courgette";
+}
+
+.food .one__img {
+  width: 85%;
+  border-radius: 20%;
+  margin: 10px 0;
+}
+
+@media (min-width: 600px) {
+  .food .one {
+    padding: 25px;
+    margin: 13%;
+  }
+}
+
+@media (min-width: 900px) {
+  .food__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .food__one {
+    width: 45%;
+  }
+  .food .one {
+    margin: 2%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .food__one {
+    width: 40%;
+  }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-image: url("../img/pier-407252_1920.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
+  padding: 10px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: auto;
+}
+
+.contact i {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    min-height: 7vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact {
+    min-height: 10vh;
+  }
+  .contact p {
+    font-size: 18px;
+  }
+  .contact i {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact p {
+    font-size: 20px;
+  }
+  .contact i {
+    font-size: 22px;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 100%;
+  background-color: #241f1f;
+  font: white 18px;
+}
+
+footer p {
+  color: gray;
+  padding: 15px 0 15px 15px;
+}
+/*# sourceMappingURL=style.css.map */

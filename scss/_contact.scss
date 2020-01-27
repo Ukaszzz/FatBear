@@ -1,0 +1,46 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-image: url("/img/pier-407252_1920.jpg");
+  background-attachment: fixed;
+  background-position: center;
+
+  color: white;
+  padding: 10px;
+}
+.contact p {
+  font-size: 16px;
+  margin: auto;
+}
+.contact i {
+  padding: 10px;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    min-height: 7vh;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) {
+  .contact {
+    min-height: 10vh;
+  }
+  .contact p {
+    font-size: 18px;
+  }
+  .contact i {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact p {
+    font-size: 20px;
+  }
+  .contact i {
+    font-size: 22px;
+  }
+}
